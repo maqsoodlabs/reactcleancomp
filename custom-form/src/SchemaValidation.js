@@ -13,7 +13,7 @@ let emailSchema = Yup.object().shape({
 
 let passwordSchema = Yup.object().shape({
   password: Yup.string()
-    .min(3, "Must be 4 characters at least")
+    .min(3, "Must be 3 characters at least")
     .max(10, "Maximum 10 characters")
     .required("Required"),
 });
